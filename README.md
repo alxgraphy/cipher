@@ -82,7 +82,7 @@ We welcome contributions to the Cipher programming language! Please see our [CON
 
 ## 📄 License
 
-This project is licensed under the [ISC License](LICENSE.md).
+This project is licensed under the [BSD 2-Clause](LICENSE.md).
 
 ## 🧑‍💻 Development Roadmap
 
