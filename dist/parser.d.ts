@@ -1,0 +1,47 @@
+import Lexer from "./lexer";
+import * as ast from "./ast";
+declare class Parser {
+    private l;
+    private errors;
+    private curToken;
+    private peekToken;
+    private prefixParseFns;
+    private infixParseFns;
+    constructor(lexer: Lexer);
+    getErrors(): string[];
+    private peekError;
+    private nextToken;
+    parseProgram(): ast.Program;
+    private parseStatement;
+    private parseLetStatement;
+    private parseReturnStatement;
+    private parseExpressionStatement;
+    private parseExpression;
+    private parseIdentifier;
+    private parseIntegerLiteral;
+    private parsePrefixExpression;
+    private parseBoolean;
+    private parseGroupedExpression;
+    private parseIfExpression;
+    private parseFunctionLiteral;
+    private parseFunctionParameters;
+    private parseBlockStatement;
+    private parseStringLiteral;
+    private parseArrayLiteral;
+    private parseExpressionList;
+    private parseHashLiteral;
+    private parseHashPairs;
+    private parseInfixExpression;
+    private parseCallExpression;
+    private parseIndexExpression;
+    private curTokenIs;
+    private peekTokenIs;
+    private expectPeek;
+    private peekPrecedence;
+    private curPrecedence;
+    private noPrefixParseFnError;
+    private registerPrefix;
+    private registerInfix;
+}
+export default Parser;
+//# sourceMappingURL=parser.d.ts.map
